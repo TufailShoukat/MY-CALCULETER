@@ -1,0 +1,147 @@
+.img-back {
+  background-image: url(./pngtree-business-technology-light-effect-6g-light-circuit-big-data-laser-electronic-image_1541877.jpg);
+  background-position: center;
+
+}
+
+
+.calculator {
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, hsl(211, 96%, 9%), hsl(210, 94%, 7%));
+  border-radius: 10px;
+  border: 3px solid transparent;
+
+  border-image-slice: 1;
+  /* transition: border-color 0.3s ease;
+  position: relative;bottom:  750px; */
+
+}
+
+.display {
+  background-color: #fff;
+  border: 2px solid rgb(147, 147, 48);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  background-color: rgb(5, 5, 95);
+  color: yellow;
+  font-family: cursive;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  font-family: cursive;
+
+}
+
+.button {
+  font-family: cursive;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(111, 146, 41);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  /* background-color: #45a049; */
+  background-color: #2196f3;
+  transition: 2s;
+  border-radius: 50%;
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.clear {
+  background-color: #d76744;
+}
+
+.operator {
+  background-color: #2f71a6;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 20px;
+  color: green;
+  font-family: cursive;
+  display: inline-block;
+  position: relative;
+  animation: textAnimation 2s infinite;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: hsl(211, 96%, 9%);
+  /* Initial background color */
+  padding: 10px;
+  border-radius: 5px;
+  color: yellowgreen;
+  font-family: cursive;
+  
+  
+
+}
+
+
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+
+  }
+
+  100% {
+    transform: translateX(-100%);
+
+  }
+}
+
+
+
+#minues {
+  background-color: red;
+  font-family: cursive;
+
+}
+
+#equal {
+  background-color: rgb(36, 134, 36);
+  font-family: cursive;
+}
